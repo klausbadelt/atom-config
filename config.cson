@@ -1,5 +1,50 @@
 "*":
+  "atom-ctags":
+    GotoSymbolClick: "right click"
+  build:
+    saveOnBuild: true
   core:
-    telemetryConsent: "no"
+    disabledPackages: [
+      "docker"
+      "atom-ctags"
+      "git-blame"
+      "git-history"
+      "file-icons"
+      "minimap"
+      "rails-transporter"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "tmp/"
+      "log/"
+    ]
+    projectHome: "/Users/audiolib/src"
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+  editor:
+    preferredLineLength: 130
   "exception-reporting":
-    userId: "104ea908-06b0-b786-cc57-a9b5d51e586d"
+    userId: "fba34e50-fbff-daf3-45a7-6d7d660fd63b"
+  minimap: {}
+  "project-manager": {}
+  "tree-view":
+    squashDirectoryNames: true
+  welcome:
+    showOnStartup: false
+".diff":
+  editor:
+    preferredLineLength: 130
+".dockerfile.source":
+  editor:
+    preferredLineLength: 130
+".dockerignore.source":
+  editor:
+    preferredLineLength: 130
