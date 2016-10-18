@@ -1,0 +1,25 @@
+[
+  {
+    title: "kn-app"
+    group: "kinonation"
+    paths: [
+      "/Users/audiolib/src/kn-app"
+    ]
+    icon: "icon-repo"
+  }
+  {
+    title: "streamio-ffmpeg"
+    group: "kinonation"
+    paths: [
+      "/usr/local/lib/ruby/gems/2.3.0/gems/streamio-ffmpeg-3.0.0"
+    ]
+  }
+  {
+    title: "kinonation"
+    group: "kinonation"
+    paths: [
+      "/Users/audiolib/src/kinonation"
+    ]
+    icon: "icon-chevron-up"
+  }
+]

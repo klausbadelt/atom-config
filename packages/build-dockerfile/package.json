@@ -1,0 +1,75 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-116912-27033-1ounsp3/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-116912-27033-1ounsp3/package.tgz",
+        "spec": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-116912-27033-1ounsp3/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/apm-install-dir-116912-27033-bhosq0"
+    ]
+  ],
+  "_from": "../d-116912-27033-1ounsp3/package.tgz",
+  "_id": "build-dockerfile@1.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/build-dockerfile",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-116912-27033-1ounsp3/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-116912-27033-1ounsp3/package.tgz",
+    "spec": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-116912-27033-1ounsp3/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-116912-27033-1ounsp3/package.tgz",
+  "_shasum": "2c60c40bb6395033435671e33149857ccd1a31d4",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-116912-27033-1ounsp3/package.tgz",
+  "_where": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/apm-install-dir-116912-27033-bhosq0",
+  "bugs": {
+    "url": "https://github.com/mishak87/atom-build-dockerfile/issues"
+  },
+  "dependencies": {},
+  "description": "Builds Dockerfile",
+  "devDependencies": {},
+  "engines": {
+    "atom": "^1.0.0"
+  },
+  "homepage": "https://github.com/mishak87/atom-build-dockerfile#readme",
+  "keywords": [
+    "build",
+    "compile",
+    "dockerfile",
+    "javascript",
+    "productivity"
+  ],
+  "license": "MIT",
+  "main": "lib/provider.coffee",
+  "name": "build-dockerfile",
+  "optionalDependencies": {},
+  "providedServices": {
+    "builder": {
+      "description": "Builds Dockerfile",
+      "versions": {
+        "2.0.0": "provideBuilder"
+      }
+    }
+  },
+  "readme": "# Dockerfile builder for Atom\n\nUses the [atom-build](https://github.com/noseglid/atom-build) package to build dockerfiles from the `Atom` editor.\n\nThis package requires [atom-build](https://github.com/noseglid/atom-build) to be installed.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishak87/atom-build-dockerfile.git"
+  },
+  "version": "1.0.1"
+}
