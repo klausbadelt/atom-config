@@ -10,8 +10,8 @@
       "git-blame"
       "git-history"
       "file-icons"
-      "minimap"
       "rails-transporter"
+      "build"
     ]
     ignoredNames: [
       ".git"
