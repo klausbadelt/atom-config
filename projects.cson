@@ -24,11 +24,4 @@
     ]
     icon: "icon-chevron-right"
   }
-  {
-    title: "streamio-ffmpeg"
-    group: "kinonation"
-    paths: [
-      "/usr/local/lib/ruby/gems/2.3.0/gems/streamio-ffmpeg-3.0.0"
-    ]
-  }
 ]
