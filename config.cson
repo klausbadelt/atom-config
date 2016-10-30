@@ -9,8 +9,6 @@
       "atom-ctags"
       "git-blame"
       "git-history"
-      "file-icons"
-      "rails-transporter"
       "build"
     ]
     ignoredNames: [
