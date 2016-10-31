@@ -15,7 +15,14 @@
     ]
     icon: "icon-repo"
   }
-
+  {
+    title: "transcode-worker"
+    group: "kinonation"
+    paths: [
+      "~/src/transcode-worker"
+    ]
+    icon: "icon-chevron-down"
+  }
   {
     title: "atom-config"
     group: "kinonation"
