@@ -80,6 +80,11 @@ module.exports =
       type: 'integer'
       default: 5
       description: 'How long should success/error messages be shown?'
+    showFormat:
+      description: 'Which format to use for git show? (none will use your git config default)'
+      type: 'string'
+      default: 'full'
+      enum: ['oneline', 'short', 'medium', 'full', 'fuller', 'email', 'raw', 'none']
     pullBeforePush:
       description: 'Pull from remote before pushing'
       type: 'string'
@@ -93,6 +98,9 @@ module.exports =
       description: '(Experimental) Show diffs in commit pane?'
       type: 'boolean'
       default: false
+    enableStatusBarIcon:
+      type: 'boolean'
+      default: true
 
   subscriptions: null
 
@@ -108,6 +116,7 @@ module.exports =
       @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus:init', -> GitInit()
     @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus:menu', -> new GitPaletteView()
     @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus:add', -> git.getRepo().then((repo) -> GitAdd(repo))
+    @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus:add-modified', -> git.getRepo().then((repo) -> git.add(repo, update: true))
     @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus:add-all', -> git.getRepo().then((repo) -> GitAdd(repo, addAll: true))
     @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus:commit', -> git.getRepo().then((repo) -> GitCommit(repo))
     @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus:commit-all', -> git.getRepo().then((repo) -> GitCommit(repo, stageChanges: true))
@@ -151,6 +160,7 @@ module.exports =
     @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus:run', -> git.getRepo().then((repo) -> new GitRun(repo))
     @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus:merge', -> git.getRepo().then((repo) -> GitMerge(repo))
     @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus:merge-remote', -> git.getRepo().then((repo) -> GitMerge(repo, remote: true))
+    @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus:merge-no-fast-forward', -> git.getRepo().then((repo) -> GitMerge(repo, no_fast_forward: true))
     @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus:rebase', -> git.getRepo().then((repo) -> GitRebase(repo))
     @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus:git-open-changed-files', -> git.getRepo().then((repo) -> GitOpenChangedFiles(repo))
     @subscriptions.add atom.config.observe 'git-plus.syntaxHighlighting',
@@ -168,7 +178,8 @@ module.exports =
 
   consumeStatusBar: (statusBar) ->
     @setupBranchesMenuToggle statusBar
-    @setupOutputViewToggle statusBar
+    if atom.config.get 'git-plus.enableStatusBarIcon'
+      @setupOutputViewToggle statusBar
 
   setupOutputViewToggle: (statusBar) ->
     div = document.createElement 'div'
@@ -185,6 +196,7 @@ module.exports =
   setupBranchesMenuToggle: (statusBar) ->
     statusBar.getRightTiles().some ({item}) =>
       if item?.classList?.contains? 'git-view'
-        $(item).find('.git-branch').on 'click', (e) ->
-          atom.commands.dispatch(document.querySelector('atom-workspace'), 'git-plus:checkout')
+        $(item).find('.git-branch').on 'click', ({altKey, shiftKey}) ->
+          unless altKey or shiftKey
+            atom.commands.dispatch(document.querySelector('atom-workspace'), 'git-plus:checkout')
         return true

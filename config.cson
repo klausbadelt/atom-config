@@ -1,15 +1,15 @@
 "*":
-  "atom-ctags":
-    GotoSymbolClick: "right click"
+  "atom-ctags": {}
   build:
     saveOnBuild: true
   core:
     disabledPackages: [
       "docker"
-      "atom-ctags"
       "git-blame"
       "git-history"
       "build"
+      "rails-transporter"
+      "symbols-view"
     ]
     ignoredNames: [
       ".git"
@@ -34,6 +34,9 @@
     userId: "fba34e50-fbff-daf3-45a7-6d7d660fd63b"
   minimap: {}
   "project-manager": {}
+  "rails-finder": {}
+  "rails-model-schema":
+    sortByAlphabeticalOrder: true
   "tree-view":
     squashDirectoryNames: true
   welcome:
@@ -45,5 +48,20 @@
   editor:
     preferredLineLength: 130
 ".dockerignore.source":
+  editor:
+    preferredLineLength: 130
+".html.ruby.text":
+  editor:
+    preferredLineLength: 130
+".js.rails.source source.jquery.js":
+  editor:
+    preferredLineLength: 130
+".rails.rjs.ruby.source":
+  editor:
+    preferredLineLength: 130
+".rails.ruby.source":
+  editor:
+    preferredLineLength: 130
+".ruby.source.sql":
   editor:
     preferredLineLength: 130

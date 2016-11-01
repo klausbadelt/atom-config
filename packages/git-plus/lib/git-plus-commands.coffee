@@ -42,6 +42,7 @@ getCommands = ->
       git.refresh()
       commands = []
       commands.push ['git-plus:add', 'Add', -> GitAdd(repo)]
+      commands.push ['git-plus:add-modified', 'Add Modified', -> git.add(repo, update: true)]
       commands.push ['git-plus:add-all', 'Add All', -> GitAdd(repo, addAll: true)]
       commands.push ['git-plus:log', 'Log', -> GitLog(repo)]
       commands.push ['git-plus:log-current-file', 'Log Current File', -> GitLog(repo, onlyCurrentFile: true)]
@@ -85,6 +86,7 @@ getCommands = ->
       commands.push ['git-plus:run', 'Run', -> new GitRun(repo)]
       commands.push ['git-plus:merge', 'Merge', -> GitMerge(repo)]
       commands.push ['git-plus:merge-remote', 'Merge Remote', -> GitMerge(repo, remote: true)]
+      commands.push ['git-plus:merge-no-fast-forward', 'Merge without fast-forward', -> GitMerge(repo, no_fast_forward: true)]
       commands.push ['git-plus:rebase', 'Rebase', -> GitRebase(repo)]
       commands.push ['git-plus:git-open-changed-files', 'Open Changed Files', -> GitOpenChangedFiles(repo)]
 
