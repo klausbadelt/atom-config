@@ -1,5 +1,6 @@
 "*":
-  "atom-ctags": {}
+  "atom-ctags":
+    GotoSymbolClick: "middle click"
   build:
     saveOnBuild: true
   core:
@@ -10,6 +11,10 @@
       "build"
       "rails-transporter"
       "symbols-view"
+      "atom-ctags"
+      "build-dockerfile"
+      "rails-model-schema"
+      "busy"
     ]
     ignoredNames: [
       ".git"
@@ -28,10 +33,12 @@
       "base16-tomorrow-dark-theme"
     ]
   editor:
-    fontSize: 12
+    fontSize: 13
     preferredLineLength: 130
   "exception-reporting":
     userId: "fba34e50-fbff-daf3-45a7-6d7d660fd63b"
+  "git-plus":
+    verboseCommits: true
   minimap: {}
   "project-manager": {}
   "rails-finder": {}
