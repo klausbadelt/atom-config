@@ -1,4 +1,7 @@
 "*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "3283215b-461b-488c-87ce-604cd38952ee"
   "atom-ctags": {}
   build:
     saveOnBuild: true
