@@ -2,40 +2,40 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-116914-96027-1epvd5a/package.tgz",
+        "raw": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-1161026-98754-2f45cq/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-116914-96027-1epvd5a/package.tgz",
-        "spec": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-116914-96027-1epvd5a/package.tgz",
+        "rawSpec": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-1161026-98754-2f45cq/package.tgz",
+        "spec": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-1161026-98754-2f45cq/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/apm-install-dir-116914-96027-ahi9k6"
+      "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/apm-install-dir-1161026-98754-a2b31r"
     ]
   ],
-  "_from": "../d-116914-96027-1epvd5a/package.tgz",
+  "_from": "../d-1161026-98754-2f45cq/package.tgz",
   "_id": "busy@0.7.0",
   "_inCache": true,
   "_installable": true,
   "_location": "/busy",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-116914-96027-1epvd5a/package.tgz",
+    "raw": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-1161026-98754-2f45cq/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-116914-96027-1epvd5a/package.tgz",
-    "spec": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-116914-96027-1epvd5a/package.tgz",
+    "rawSpec": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-1161026-98754-2f45cq/package.tgz",
+    "spec": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-1161026-98754-2f45cq/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-116914-96027-1epvd5a/package.tgz",
+  "_resolved": "file:../d-1161026-98754-2f45cq/package.tgz",
   "_shasum": "f2a4ef8c1b3331f8b360f11160472cb9c08a19dc",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-116914-96027-1epvd5a/package.tgz",
-  "_where": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/apm-install-dir-116914-96027-ahi9k6",
+  "_spec": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/d-1161026-98754-2f45cq/package.tgz",
+  "_where": "/private/var/folders/qy/8sst__vs7dg11bybnmkjrg300000gn/T/apm-install-dir-1161026-98754-a2b31r",
   "bugs": {
     "url": "https://github.com/noseglid/atom-busy/issues"
   },
